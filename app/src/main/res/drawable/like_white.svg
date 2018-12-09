@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>like</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.1" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search-Popular" transform="translate(-306.000000, -613.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="popular-recipe" transform="translate(20.000000, 445.000000)">
+                <g id="recipe#2" transform="translate(0.000000, 159.000000)">
+                    <g id="like_button" transform="translate(277.000000, 0.000000)">
+                        <g id="like" transform="translate(10.000000, 10.000000)">
+                            <path d="M10.1215,0.8785 C8.95,-0.293 7.0505,-0.293 5.879,0.8785 C5.7345,1.023 5.609,1.1785 5.5005,1.342 C5.392,1.1785 5.266,1.0225 5.122,0.8785 C3.9505,-0.293 2.051,-0.293 0.8795,0.8785 C-0.292,2.05 -0.292,3.9495 0.8795,5.121 L5.5,9.7425 L10.1215,5.121 C11.293,3.9495 11.293,2.05 10.1215,0.8785 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
