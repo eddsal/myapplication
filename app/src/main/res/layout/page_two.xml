@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="ContentDescription"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+
+>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/SearchView"
+            android:layout_width="295dp"
+            android:layout_height="36dp"
+            app:cardCornerRadius="25dp"
+            tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="13dp">
+
+        <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_search_ico" tools:ignore="VectorDrawableCompat"
+                android:contentDescription="@string/todo" android:layout_marginStart="16dp"/>
+
+        <TextView
+                android:id="@+id/searchTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="54dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/search_recipes" android:layout_marginStart="54dp"/>
+
+        <ImageView
+                android:id="@+id/closeSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_close"
+                android:layout_marginEnd="16dp" tools:ignore="VectorDrawableCompat"
+                android:contentDescription="@string/todo"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+            android:id="@+id/popKeywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/popular_keywords"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SearchView" android:contentDescription="@string/description"/>
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop1"
+            android:layout_width="300dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popKeywords">
+
+        <ImageView
+                android:id="@+id/popSearch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" android:contentDescription="@string/todo"/>
+
+        <TextView
+                android:id="@+id/popText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/breakfast"
+                android:layout_marginStart="30dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop2"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#13"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop1">
+
+        <ImageView
+                android:id="@+id/popSearch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" android:contentDescription="@string/todo"/>
+
+        <TextView
+                android:id="@+id/popText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/avocado_salad"
+                android:layout_marginStart="30dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop3"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop2">
+
+        <ImageView
+                android:id="@+id/popSearch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" android:contentDescription="@string/todo"/>
+
+        <TextView
+                android:id="@+id/popText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/italian_food"
+                android:layout_marginStart="30dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop4"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop3">
+
+        <ImageView
+                android:id="@+id/popSearch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+                android:id="@+id/popText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/dinner"
+                android:layout_marginStart="30dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop5"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop4">
+
+        <ImageView
+                android:id="@+id/popSearch5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+                android:id="@+id/popText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/chinese_recipe"
+                android:layout_marginStart="30dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/pop6"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop5">
+
+        <ImageView
+                android:id="@+id/popSearch6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_search_ico"
+                tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+                android:id="@+id/popText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/blueberry"
+                android:layout_marginStart="30dp" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+            android:id="@+id/popRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/popular_recipe"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop6" />
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/recipe1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popRecipe">
+
+        <ImageView
+                android:id="@+id/img1"
+                style="@style/imgRecipe"
+                app:srcCompat="@drawable/img1" />
+
+        <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chicken_tikka_masala"
+                android:textColor="#222"
+                android:textSize="14sp"
+                android:layout_marginStart="70dp" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/if_there_s_one_dish_guaranteed_to_be_on"
+                android:textSize="12sp"
+                android:layout_marginStart="70dp" />
+    </android.support.v7.widget.CardView>
+
+    <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_round_rect_pink"
+            android:contentDescription="@string/buttonPink"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe2"
+            app:layout_constraintEnd_toEndOf="@+id/recipe2"
+            app:layout_constraintTop_toTopOf="@+id/recipe2" />
+
+    <TextView
+            android:id="@+id/likesNumber3"
+            android:layout_width="25dp"
+            android:layout_height="17dp"
+            android:text="@string/_342"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageButton3"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@string/like"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+            app:layout_constraintStart_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/imageButton3"
+            app:srcCompat="@drawable/ic_like"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/sep1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#aaa"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe1">
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/recipe2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sep1">
+
+        <ImageView
+                android:id="@+id/img2"
+                style="@style/imgRecipe"
+                app:srcCompat="@drawable/img2" />
+
+        <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/swordfish_steaks"
+                android:textColor="#222"
+                android:textSize="14sp" />
+
+        <TextView
+                android:id="@+id/textView14"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/prepare_grill_for_medium_high_heat_oil"
+                android:textSize="12sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/sep2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#aaa"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe2" />
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/recipe3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sep2">
+
+        <ImageView
+                android:id="@+id/img3"
+                style="@style/imgRecipe"
+                app:srcCompat="@drawable/img3" android:contentDescription="@string/todo"/>
+
+        <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/cacio_e_pepe_pasta"
+                android:textColor="#222"
+                android:textSize="14sp"
+                android:layout_marginStart="70dp" />
+
+        <TextView
+                android:id="@+id/textView16"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/if_one_pasta_dish_exemplifie_the_comp"
+                android:textSize="12sp"
+                android:layout_marginStart="70dp" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_round_rect"
+            android:contentDescription="@string/buttonPink"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe1"
+            app:layout_constraintEnd_toEndOf="@+id/recipe1"
+            app:layout_constraintTop_toTopOf="@+id/recipe1" />
+
+    <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@string/like"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+            app:layout_constraintStart_toStartOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4"
+            app:srcCompat="@drawable/ic_like_pink"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <TextView
+            android:id="@+id/likesNumber4"
+            android:layout_width="25dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/_220"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageButton4"
+            tools:ignore="MissingConstraints" />
+
+    <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_round_rect"
+            android:contentDescription="@string/buttonPink"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe3"
+            app:layout_constraintEnd_toEndOf="@+id/recipe3"
+            app:layout_constraintTop_toTopOf="@+id/recipe3" />
+
+    <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@string/like"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+            app:layout_constraintStart_toStartOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="@+id/imageButton5"
+            app:srcCompat="@drawable/ic_like_pink"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <TextView
+            android:id="@+id/likesNumber5"
+            android:layout_width="25dp"
+            android:layout_height="17dp"
+            android:text="@string/_156"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageButton5"
+            tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
